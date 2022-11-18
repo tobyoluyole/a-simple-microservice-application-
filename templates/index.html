@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>A simple microservice application</title>
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+
+
+
+
+	</head>
+
+	<body>
+        <article>
+            <h1>A Simple web application to fetch the word "..........." using an API call</h1>
+            <p>Please enter your name to start the application .</p>
+        </article>
+        <form class="grid" action="/result" method="POST">
+
+          {% if name %}
+            <center>
+              <h3 style="color: blue;" class="let_space">Welcome {{name}}<br> The word we are trying to fetch using an API call is "TALENT PLUS"!!</h3>
+            </center>
+
+          {% endif %}
+
+          <label for="name">Enter you name:</label>
+          <input type="text" id="name" name="name">
+
+          <center><input class="file_submit" type="Submit"></center>
+
+        </form>
+
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+    </body>
+
+</html>
